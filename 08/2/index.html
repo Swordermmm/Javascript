@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+            ["Alice", 26, true],
+            ["Bob", 30, false],
+            ["Charlie", 22, true],
+            ["David", 27, true],
+            ["Eve", 20, false]
+        ];
+        const filterAndSortUsers = (users) => {
+            array = users.filter(user => user[1] > 25 && user[2] == true)
+            array.sort((a, b) => a - b);
+            const arrayOfNames = array.map(user => user[0])
+            return arrayOfNames
+        }
+
+        const sportUsersOver25 = filterAndSortUsers(users);
+        console.log(sportUsersOver25);
+    </script>
+</body>
+</html>

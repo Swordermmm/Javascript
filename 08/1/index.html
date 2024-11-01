@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const countVowels = (word) => {
+            const vowels = ['a', 'e', 'i', 'o', 'u']
+            word = word.toLocaleLowerCase()
+            const array = word.split('')
+            const V = array.filter(char => vowels.includes(char))
+            return V.length
+        }
+        const word = 'Javascript'
+        const vowelCount = countVowels(word)
+        console.log(vowelCount)
+    </script>
+</body>
+</html>
