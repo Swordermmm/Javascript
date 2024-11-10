@@ -1,15 +1,13 @@
 let books = ['Мастер и Маргарита', 'Гарри Поттер', 'За пропастью во ржи', 'Властелин колец', 'Дюна', 'Отцы и дети']
 
 function renderList(arr) {
-    listEl = document.createElement('ul')
-    listEl.setAttribute('id', 'list')
+    listEl = document.querySelector('.ul')
 
     for (let i = 0; i < arr.length; i++) {
         const divEl = document.createElement('div')
         divEl.textContent = `${i+1}) ${arr[i]}`
         listEl.append(divEl)
     }
-
     document.body.append(listEl)
 }
 

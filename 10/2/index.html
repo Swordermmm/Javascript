@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="list">
+
+    </ul>
+    <nav>
+        <button class="button-add">Добавить элемент</button>
+        <button class="button-delete">Удалить элемент</button>
+    </nav>
+
+    <script>
+        const buttonAddEl = document.querySelector(".button-add")
+        const buttonDeleteEl = document.querySelector(".button-delete")
+        const listEl = document.querySelector('.list');
+
+        buttonAddEl.addEventListener('click', function() {
+            const liEl = document.createElement("li")
+            liEl.textContent = "Новый элемент списка"
+            listEl.appendChild(liEl)
+        })
+
+        buttonDeleteEl.addEventListener('click', function() {
+            listLastChildEl = listEl.lastChild
+            listEl.removeChild(listLastChildEl)
+        })
+    </script>
+</body>
+</html>
