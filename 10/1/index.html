@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<script src="index.js"></script>
 <body>
     <nav class="gallery">
         <img class="photo1" src="one.png" onclick="newImage('one.png')" alt="ariral" width="300" height="255">
         <img class="photo2" src="two.png" onclick="newImage('two.png')" alt="ariral?" width="300" height="255">
         <img class="photo3" src="three.png" onclick="newImage('three.png')" alt="joy" width="300" height="255">
     </nav>
-<img class="mega-photo" src="" alt="big" width="600" height="500">
+<img class="mega-photo" src="one.png" alt="big" width="600" height="500">
 
 <script>
-    const photoEl = document.querySelector(".mega_photo")
+    const photoEl = document.querySelector(".mega-photo")
+    console.log(photoEl)
     function newImage(source) {
         photoEl.setAttribute('src', source)
     }
