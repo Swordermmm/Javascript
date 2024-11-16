@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script src="index.js"></script>
+        <h1>Форма опроса</h1>
+        <form class="form" action="#">
+            <div>
+                <div id="name-container">
+                    <label>Имя пользователя:</label>
+                    <input class="name-input" type="name">
+                </div>
+                <div id="email-container">
+                    <label>Email:</label>
+                    <input class="email-input" type="email">
+                </div>
+                <div id="sex-container">
+                    <label>Пол:</label>
+                    <label>
+                        <input type="radio" name="sex">Мужской
+                    </label>
+                    <label>
+                        <input type="radio" name="sex">Женский
+                    </label>
+                </div>
+                <div id="rating-container">
+                    <label>Оценка сервиса:</label>
+                    <input class="rating-input" type="range" min="0" max="10" step="1">
+                </div>
+                <div id="checkboxes">
+                    <label>Интересы пользователя:</label>
+                    <div>
+                        <div><input type="checkbox"> Спорт</div>
+                        <div><input type="checkbox"> Музыка</div>
+                        <div><input type="checkbox"> Путешествия</div>
+                        <div><input type="checkbox"> Кино</div>
+                    </div>
+                </div>
+                <div id="comments-container">
+                    <label>Дополнительные комментарии:</label>
+                    <div>
+                        <textarea class="comments-input"></textarea>
+                    </div>
+                </div>
+                <button type="submit">Отправить</button>
+            </div>
+        </form>
+    </body>
+    </html>

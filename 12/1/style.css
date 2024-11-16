@@ -1,0 +1,22 @@
+body, html {
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.wrapper {
+    display: none
+}
+
+
+.gift-container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-flex
+}
+
+.gift-functional-container {
+    max-width: 250px;
+}
