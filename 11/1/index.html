@@ -6,7 +6,7 @@
         <title>Document</title>
     </head>
     <body>
-        <script src="index.js"></script>
+        
         <h1>Форма опроса</h1>
         <form class="form" action="#">
             <div>
@@ -21,10 +21,10 @@
                 <div id="sex-container">
                     <label>Пол:</label>
                     <label>
-                        <input type="radio" name="sex">Мужской
+                        <input type="radio" name="sex" value="Мужской">Мужской
                     </label>
                     <label>
-                        <input type="radio" name="sex">Женский
+                        <input type="radio" name="sex" value="Женский">Женский
                     </label>
                 </div>
                 <div id="rating-container">
@@ -34,10 +34,10 @@
                 <div id="checkboxes">
                     <label>Интересы пользователя:</label>
                     <div>
-                        <div><input type="checkbox"> Спорт</div>
-                        <div><input type="checkbox"> Музыка</div>
-                        <div><input type="checkbox"> Путешествия</div>
-                        <div><input type="checkbox"> Кино</div>
+                        <div><input type="checkbox" class="checkboxInterest" value="Спорт"> Спорт</div>
+                        <div><input type="checkbox" class="checkboxInterest" value="Музыка"> Музыка</div>
+                        <div><input type="checkbox" class="checkboxInterest" value="Путешествия"> Путешествия</div>
+                        <div><input type="checkbox" class="checkboxInterest" value="Кино"> Кино</div>
                     </div>
                 </div>
                 <div id="comments-container">
@@ -49,5 +49,6 @@
                 <button type="submit">Отправить</button>
             </div>
         </form>
+        <script src="index.js"></script>
     </body>
     </html>

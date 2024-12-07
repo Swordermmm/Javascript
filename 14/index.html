@@ -3,18 +3,22 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
+    
     <form id="film-form">
       <label for="title">Название:</label><br />
-      <input type="text" id="title" name="title" /><br />
+      <input type="text" id="title" name="title" class="text" /><br />
       <label for="genre">Жанр:</label><br />
-      <input type="text" id="genre" name="genre" /><br />
+      <input type="text" id="genre" name="genre" class="text" /><br />
       <label for="releaseYear">Год:</label><br />
-      <input type="text" id="releaseYear" name="releaseYear" /><br />
+      <input type="text" id="releaseYear" name="releaseYear" class="text" /><br />
       <input type="checkbox" id="isWatched" name="isWatched" />
       <label for="isWatched">Успели посмотреть?</label><br />
-
       <!-- <input type="submit" value="Submit"> -->
-      <button type="submit">Submit</button>
+      <div class="edit" style="display: none">
+        <button type="button" onclick="updating()" id="update">Обновить</button><br />
+        <button type="button" onclick="Cancel()">Отменить редактирование</button>
+      </div>
+      <button class="add" type="submit">Добавить</button>
     </form>
     <table id="film-table">
       <thead>
@@ -26,6 +30,14 @@
           <th>Действие</th>
         </tr>
       </thead>
+      <form id="form-sort">
+        <select id="sort-select">
+          <option value="releaseYear">Год</option>
+          <option value="title">Название</option>
+          <option value="genre">Жанр</option>
+        </select>
+        <button type="button" onclick="sortTable()">Сортировать</button>
+      </form>
       <tbody id="film-tbody">
         <!-- Rows will be inserted here -->
       </tbody>
