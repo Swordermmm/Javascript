@@ -1,0 +1,31 @@
+.languages-info {
+    width: 267px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.languages-info_item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.languages-info_item p {
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 104%;
+}
+
+.languages-info_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.languages-info_progress {
+    background-color: #28D979;
+    width: 168px;
+    height: 11px;
+    border-radius: 3px;
+}
